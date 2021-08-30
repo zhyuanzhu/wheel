@@ -10,7 +10,7 @@
   - [ ] apply 函数
   - [ ] bind 函数
   - [ ] new 函数
-  - [ ] forEach 函数
+  - [x] [forEach 函数](./utils/forEach.js)
   - [ ] map 函数
   - [ ] reduce 函数
   - [ ] instanceof 函数
