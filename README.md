@@ -6,7 +6,7 @@
   - [ ] debounce 防抖函数
   - [x] [throttle 节流函数](./utils/throttle.js)
   - [ ] curry 柯里化函数
-  - [ ] call 函数
+  - [x] call 函数(./utils/curry.js)
   - [ ] apply 函数
   - [ ] bind 函数
   - [ ] new 函数
