@@ -11,7 +11,7 @@
   - [ ] bind 函数
   - [ ] new 函数
   - [x] [forEach 函数](./utils/forEach.js)
-  - [ ] map 函数
+  - [x] [map 函数](./utils/map.js)
   - [ ] reduce 函数
   - [ ] instanceof 函数
   - [ ] reduce 实现数组的 map 方法
