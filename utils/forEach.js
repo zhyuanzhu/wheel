@@ -4,7 +4,7 @@ Array.prototype._forEach = (callback, thisArg) => {
   }
 
   if (typeof callback !== 'function') {
-    throw new Error('`callback` is not a function')
+    throw new Error(`${callback} is not a function`)
   }
 
   for (let i = 0, len = this.length; i < len; i++) {

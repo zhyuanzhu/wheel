@@ -4,12 +4,12 @@ Array.prototype._map = function (callback, thisArg) {
   }
 
   if (typeof callback !== 'function') {
-    throw new Error('`callback` is not a function')
+    throw new Error(`${callback} is not a function`)
   }
   const { length } = this;
 
   const result = new Array(length);
-  
+
   for (let i  = 0; i  < length; i++) {
     let curr = callback.call(thisArg, this[i], i, this)
     result[i] = curr
