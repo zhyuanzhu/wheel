@@ -17,5 +17,5 @@
   - [ ] reduce 实现数组的 map 方法
   - [ ] 数组扁平化
   - [ ] 深拷贝
-  - [ ] 原生 ajax
-  - [ ] 模拟 Vue2 nextTick 方法
+  - [ ] [原生 ajax](./utils/ajax.js)
+  - [x] [模拟 Vue2 nextTick 方法](./utils/nextTick.js)
