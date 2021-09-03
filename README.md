@@ -12,7 +12,7 @@
   - [ ] new 函数
   - [x] [forEach 函数](./utils/forEach.js)
   - [x] [map 函数](./utils/map.js)
-  - [ ] reduce 函数
+  - [x] [reduce 函数](./utils/reduce.js)
   - [x] [instanceof 函数](./utils/instanceOf.js)
   - [ ] reduce 实现数组的 map 方法
   - [ ] 数组扁平化
