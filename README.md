@@ -2,7 +2,7 @@
 
 ## 工具函数
 
-  - [ ] Promise
+  - [x] [Promise](./utils/promise.js)
   - [x] [debounce 防抖函数](./utils/debounce.js)
   - [x] [throttle 节流函数](./utils/throttle.js)
   - [x] [curry 柯里化函数](./utils/curry.js)

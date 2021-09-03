@@ -52,6 +52,31 @@ class Promise {
     }
   }
 
+  static all (array) {
+    const result = []
+    let index = 0
+    const { length } = array
+
+    return new Promise((resolve, reject) => {
+
+      function addData (key, value) {
+        result[key] = value
+        index++
+        if (index === length) resolve(result)
+      }
+
+      for (let i = 0; i < length; i++) {
+        let curr = array[i]
+        if (curr instanceof Promise) {
+          curr.then(val => addData(i, val), err => reject(err))
+        } else {
+          addData(i, curr)
+        }
+      }
+
+    })
+  }
+
 
 
 }
