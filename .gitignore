@@ -1,4 +1,5 @@
 .DS_Store
+**/test.html
 
 package-lock.json
 # local env files

@@ -14,7 +14,7 @@
   - [x] [map 函数](./utils/map.js)
   - [x] [reduce 函数](./utils/reduce.js)
   - [x] [instanceof 函数](./utils/instanceOf.js)
-  - [ ] reduce 实现数组的 map 方法
+  - [x] [reduce 实现数组的 map 方法](./utils/reduceMap.js)
   - [ ] 数组扁平化
   - [ ] 深拷贝
   - [x] [原生 ajax](./utils/ajax.js)
