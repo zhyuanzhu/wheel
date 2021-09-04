@@ -8,7 +8,7 @@ const DEFAULT_FAIL_CALLBACK = err => {
 }
 
 
-class Promise {
+class _Promise {
   constructor (executor) {
     try {
       executor(this.resolve, this.rejected)
@@ -57,7 +57,7 @@ class Promise {
     let index = 0
     const { length } = array
 
-    return new Promise((resolve, reject) => {
+    return new _Promise((resolve, reject) => {
 
       function addData (key, value) {
         result[key] = value
@@ -67,13 +67,26 @@ class Promise {
 
       for (let i = 0; i < length; i++) {
         let curr = array[i]
-        if (curr instanceof Promise) {
+        if (curr instanceof _Promise) {
           curr.then(val => addData(i, val), err => reject(err))
         } else {
           addData(i, curr)
         }
       }
 
+    })
+  }
+
+  static race (array) {
+    return new _Promise((resolve, reject) => {
+      for (let i = 0, len = array.length; i < len; i++) {
+        const curr = array[i]
+        if (curr instanceof _Promise) {
+          curr.then(val => resolve(val), err => reject(err))
+        } else {
+          resolve(curr)
+        }
+      }
     })
   }
 
