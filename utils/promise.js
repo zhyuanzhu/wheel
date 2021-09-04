@@ -90,6 +90,16 @@ class _Promise {
     })
   }
 
+  static resolve (data) {
+    if (data instanceof _Promise) return data
+    return new _Promise(resolve => resolve(data))
+  }
+
+  static reject (err) {
+    if (err instanceof _Promise) return err
+    return new _Promise(_, reject => reject(err))
+  }
+
 
 
 }
