@@ -1,5 +1,15 @@
+const loaderUtils = require('loader-utils')
 
 module.exports = function (source) {
+
+  const { name } = loaderUtils.getOptions(this);
+  console.log(name);
+
+  // 异常，可以通过 throw Error 抛出
+  // 也可以通过 this.callback(Error || null, result)
+  // 如果需要抛出异常，第一个参数传递 error 对象，如果不需要，则传入 null
+  // 第二个参数是处理后的结果值
+
   const json = JSON.stringify(source)
     .replace(/\u2028/g, '\\u2028')
     .replace(/\u2029/g, '\\u2029');
