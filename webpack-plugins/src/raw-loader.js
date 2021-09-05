@@ -7,6 +7,9 @@ module.exports = function (source) {
   const { name } = loaderUtils.getOptions(this);
   console.log(name);
 
+  // 关闭缓存
+  // this.cacheable(false)
+
   /** 同步 loader */
   // 异常，可以通过 throw Error 抛出
   // 也可以通过 this.callback(Error || null, result)
