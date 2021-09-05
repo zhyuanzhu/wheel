@@ -18,3 +18,21 @@
 
 > 伴随 webpack 全程，可以处理任何；一个构造函数
 
+- 参数校验阶段可以直接 throw 的方式抛出
+```js
+  throw new Error('Error Message')
+```
+
+- 通过 compilation 对象的 warnings 和 errors 接收
+```js
+  compilation.warnings.push('warnings')
+  compilation.errors.push('error')
+```
+
+- **apply 方法**
+```js
+  apply(compiler) {}
+```
+
+- 压缩构建资源插件，生成zip包
+
