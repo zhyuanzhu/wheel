@@ -109,3 +109,28 @@ export function ref(raw) {
   }
   return r
 }
+
+// toRefs
+// 接收一个 reactive 创建的对象，将所有的属性转换成类似于 ref 创建的对象
+export function toRefs (proxy) {
+  // TODO 判断是否是 reactive 创建的对象，如果不是，抛出警告
+
+  const ret = proxy instanceof Array ? new Array(proxy.length) : {}
+  for (const key in proxy) {
+    ret[key] = toProxyRef(proxy, key)
+  }
+  return ret
+}
+
+function toProxyRef (proxy, key) {
+  const ret = {
+    __v_isRef: true,
+    get value () {
+      return proxy[key]
+    },
+    set value (newValue) {
+      proxy[key] = newValue
+    }
+  }
+  return ret
+}
