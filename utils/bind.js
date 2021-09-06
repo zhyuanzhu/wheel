@@ -14,3 +14,13 @@ Function.prototype._bind = function (thisArg, ...args) {
   fBound.prototype = new fNop()
   return fBound
 }
+
+Function.prototype._bindF = function (thisArg, ...args) {
+  const fn = this
+  const boundFunc = function (...others) {
+    return fn.call(new.target ? this : thisArg, ...args, ...others)
+  }
+  boundFunc.prototype = Object.create(fn.prototype)
+  boundFunc.prototype.constructor = boundFunc
+  return boundFunc
+}

@@ -9,7 +9,7 @@
   - [x] [call 函数](./utils/call.js)
   - [x] [apply 函数](./utils/apply.js)
   - [x] [bind 函数](./utils/bind.js)
-  - [x] new 函数(./utils/new.js)
+  - [x] [new 函数](./utils/new.js)
   - [x] [forEach 函数](./utils/forEach.js)
   - [x] [map 函数](./utils/map.js)
   - [x] [reduce 函数](./utils/reduce.js)
