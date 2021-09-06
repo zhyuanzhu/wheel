@@ -8,7 +8,7 @@
   - [x] [curry 柯里化函数](./utils/curry.js)
   - [x] [call 函数](./utils/call.js)
   - [x] [apply 函数](./utils/apply.js)
-  - [ ] bind 函数
+  - [x] [bind 函数](./utils/bind.js)
   - [x] new 函数(./utils/new.js)
   - [x] [forEach 函数](./utils/forEach.js)
   - [x] [map 函数](./utils/map.js)
