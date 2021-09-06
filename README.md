@@ -7,7 +7,7 @@
   - [x] [throttle 节流函数](./utils/throttle.js)
   - [x] [curry 柯里化函数](./utils/curry.js)
   - [x] [call 函数](./utils/call.js)
-  - [ ] apply 函数
+  - [x] [apply 函数](./utils/apply.js)
   - [ ] bind 函数
   - [ ] new 函数
   - [x] [forEach 函数](./utils/forEach.js)
