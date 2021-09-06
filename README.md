@@ -6,7 +6,7 @@
   - [x] [debounce 防抖函数](./utils/debounce.js)
   - [x] [throttle 节流函数](./utils/throttle.js)
   - [x] [curry 柯里化函数](./utils/curry.js)
-  - [ ] call 函数
+  - [x] [call 函数](./utils/call.js)
   - [ ] apply 函数
   - [ ] bind 函数
   - [ ] new 函数
@@ -19,3 +19,7 @@
   - [ ] 深拷贝
   - [x] [原生 ajax](./utils/ajax.js)
   - [x] [模拟 Vue2 nextTick 方法](./utils/nextTick.js)
+
+## [超级简单的的 webpack 插件和loader](./webpack-plugins/REAEME.md)
+
+## [超级简单mini的 Vue3响应式处理](./min-vue3/README.md)
