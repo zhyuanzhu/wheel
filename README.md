@@ -19,6 +19,9 @@
   - [x] [深拷贝](./utils/deepClone.js)
   - [x] [原生 ajax](./utils/ajax.js)
   - [x] [模拟 Vue2 nextTick 方法](./utils/nextTick.js)
+  - [ ] 观察者模式
+  - [ ] 发布订阅模式，自定义事件
+  - [x] Web Components(./html/web-components.html)
 
 ## [超级简单的的 webpack 插件和loader](./webpack-plugins/REAEME.md)
 
