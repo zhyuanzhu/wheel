@@ -1,3 +1,4 @@
+// 发布订阅实现一个简单的自定义事件
 class EventEmitter {
   constructor () {
     this.subs = Object.create(null)
@@ -20,3 +21,18 @@ class EventEmitter {
   }
 
 }
+
+
+const bus = new EventEmitter()
+
+bus.$on('test', () => {
+  console.log('test')
+})
+
+bus.$on('test', () => {
+  console.log('test again')
+})
+
+bus.$emit('test')
+
+// 有一个事件中心的概念，将发布者和订阅者之间的依赖隔离，减少发布者和订阅者之间的依赖关系
