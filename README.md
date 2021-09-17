@@ -15,7 +15,7 @@
   - [x] [reduce 函数](./utils/reduce.js)
   - [x] [instanceof 函数](./utils/instanceOf.js)
   - [x] [reduce 实现数组的 map 方法](./utils/reduceMap.js)
-  - [ ] 数组扁平化
+  - [ ] [数组扁平化](./utils/flat.js)
   - [x] [深拷贝](./utils/deepClone.js)
   - [x] [原生 ajax](./utils/ajax.js)
   - [x] [模拟 Vue2 nextTick 方法](./utils/nextTick.js)
