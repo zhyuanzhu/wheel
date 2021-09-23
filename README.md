@@ -21,7 +21,8 @@
   - [x] [模拟 Vue2 nextTick 方法](./utils/nextTick.js)
   - [x] [观察者模式](./utils/observer.js)
   - [x] [发布订阅模式，自定义事件](./utils/subscribe.js)
-  - [x] Web Components(./html/web-components.html)
+  - [x] [Web Components](./html/web-components.html)
+  - [x] [retry函数](./utils/retry.js)
 
 ## [超级简单的的 webpack 插件和loader](./webpack-plugins/REAEME.md)
 
