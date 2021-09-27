@@ -65,4 +65,3 @@
 - CMD 规范：通用模块定义规范， SeaJS
 
 - ES6 import：不足之处，需要 babel 编译
-
