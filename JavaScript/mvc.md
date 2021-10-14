@@ -17,3 +17,10 @@
 - Controller 与 Modal 和 View 相对独立，方便改变应用程序的数据层和业务规则
 
 - 各个部分可独立使用单元测试
+
+## 流程
+
+  `View` 发送指令到 `Controller` ----> `Controller` 完成业务逻辑之后，要求 `Model` 改变状态 ----> `Mode`l 将新的数据发送到 `View`，用户得到反馈 
+
+    接受用户指令时，有两种互动形式。一种是直接通过 View 接受指令，传递给 Controller；另一种是直接通过 Controller 接受指令
+
