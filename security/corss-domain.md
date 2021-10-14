@@ -45,3 +45,90 @@
     - Access-Control-Request-Method 必须，它的值是逗号分隔的一个字符串，表明服务器支持的所有跨域请求的方法；不限于浏览器在 `预检` 中的请求字段（OPTIONS请求）
 
     - Access-Control-Max-Age 可选字段，用来指定本次预检请求的有效期，单位为秒
+
+- postMessage
+
+  - window属性，主要解决以下问题
+
+    - 页面和其打开的新窗口的数据传递
+
+    - 多窗口之间传递消息
+
+    - 页面与嵌套的 iframe 之间消息传递
+
+  - window.postMessage(message, targetOrigin[, transger])
+
+    - message：将要发送到其他 window 的数据
+
+    - targetOrigin：指定哪些窗口能接收到消息事件，其值可以是字符串 '*' 或者一个 url
+
+    - transger：是一串和 message 同时传递的 Transferable 对象。这些对象的所有权将被转移给消息的接收方，而发送一方将不再保留所有权 ????
+  ```js
+    // a
+    const frame = document.querySelector('#ifram')
+    frame.contentWindow.postMessage('xyz', '*')
+
+    // b
+    window.onmessage = (e) => {
+      console.lgo(e.data)     // xyz
+    }
+
+  ```
+
+- websocket
+
+  > 实现 HTML5 的一个持久化协议，实现了浏览器与服务器之间的双工通信，同时也是跨域的一种解决方案；应用层协议，基于 TCP
+
+  ``` js
+    const socket = new WebSocket('ws://localhost:3000')
+    socket.onopen = () => {
+      socket.send('xyz')          // 向服务器发送消息
+    }
+
+    socket.onmessage = (e) => {
+      console.log(e.data)       // 接收服务器返回的数据
+    }
+
+  ```
+
+- node 中间代理层
+
+  > 利用服务器之间不受同源策略限制
+
+- nginx 反向代理
+
+  > 利用 nginx 服务器转发请求
+
+## 其他一些跨域
+
+- COEP：跨源嵌入程序策略
+
+  - Cross-Origin-Embedder-Policy：
+
+    - require-corp：让站点加载明确标记可共享的跨域资源，或者是同源资源  （cross-origin/same-origin ???）
+
+- COOP：跨源开放者策略
+
+  - 设置头部 Cross-Origin-Opener-Policy: 
+
+    - same-origin：将把从该网站打开的其他不同源的窗口隔离在不同的浏览器 Context Group ，这样就创建资源的隔离环境
+
+    - same-origin-allow-popups：顶级页面会保留一些弹出窗口的应用
+
+    - unsafe-none：默认设置，允许当前页面和弹窗页面共享 `Context Group`
+
+    ```js
+      // 浏览器 Context Group 是一组共享上下文的 tab、window 或 iframe
+    ```
+
+- CORP：跨域资源共享
+
+  - 设置头部 Cross-Origin-Resource-Policy
+
+    - same-site：只能从同一站点加载
+
+    - same-origin：只能从相同的来源加载
+
+    - cross-origin：可以由任何网站加载
+
+- CORB：跨源读取阻止
