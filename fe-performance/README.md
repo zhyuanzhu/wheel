@@ -29,3 +29,5 @@
 - [同构直出](./render/同构直出.md)
 
 - [PWA](./render/PWA.md)
+
+- [加载策略](./render/加载策略.md)
