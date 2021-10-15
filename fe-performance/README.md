@@ -31,3 +31,5 @@
 - [PWA](./render/PWA.md)
 
 - [加载策略](./render/加载策略.md)
+
+- [接口服务调用优化](./render/接口服务调用优化.md)
