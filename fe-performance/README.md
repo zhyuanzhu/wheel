@@ -43,3 +43,7 @@
 - [DNS优化](./net-work/dns.md)
 
 - [减少http请求数](./net-work/减少http请求数.md)
+
+- [减少Cookie大小策略](./net-work/减少Cookie大小策略.md)
+
+- [gzip压缩](./net-work/gzip压缩.md)
