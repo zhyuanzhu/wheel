@@ -39,3 +39,7 @@
 ## 网络优化
 
 - [CDN优化](./net-work/cdn.md)
+
+- [DNS优化](./net-work/dns.md)
+
+- [减少http请求数](./net-work/减少http请求数.md)

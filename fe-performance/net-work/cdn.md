@@ -1,4 +1,4 @@
-# CDN
+# CDN 优化
 
 > 内容分发网络（Content Delivery Network）是利用最靠近每一位用户的服务器，更快、更可靠的将文件发送给用户分发网络
 
