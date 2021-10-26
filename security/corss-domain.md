@@ -6,6 +6,20 @@
 
     两个 URL 的协议、端口、域名只要有一个不同，则属于跨域
 
+## 跨域请求预检
+
+    跨域共享规范标准要求，对那些可能对服务器数据产生副作用的 http 请求方法（特别是 get 以外的 http 请求，或者搭配某些 mime 类型的 post 请求），浏览器必须首先使用一次 options 方法发起一个预检请求，从而获知服务端是否允许该跨域请求。
+
+  - 简单请求
+
+    - get, head, post；且 Content-Type 的值仅限于 application/x-www-form-urlencoded, multipart/form-data, text/plain
+
+  - 复杂请求
+
+    - 除了 get, head, post 之外的请求，例如 put, delete,
+
+    - 设置了 Content-Type 的值不属于 application/x-www-form-urlencoded, multipart/form-data, text/plain 
+    
 ## 跨域的解决方案
 
 - JSONP
